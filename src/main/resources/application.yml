@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://hikaridbserver.database.windows.net:1433;database=hikaridb;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;
+    username: deepthi
+    password: Balaji@1257
+    hikari: 
+    connectionTimeout: 30000 
+    idleTimeout : 600000 
+    maxLifetime : 1800000 
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      dialect : org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  port: 9191
+
+
